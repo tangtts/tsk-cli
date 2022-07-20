@@ -2,6 +2,7 @@
 const program = require("commander")
 // chalk 使用 4.0.0
 const chalk = require("chalk")
+var figlet = require('figlet');
 
 program.version(`tsk-cli@${require("../package.json").version}`)
 .usage(`<command> [options]`)
@@ -14,7 +15,16 @@ program.command("create <app-name>")
 //  tsk-cli create -h 可以看到
 .option("-f,--force","强制替换当前项目如果重名")
 .action((name,cmd)=>{
-  console.log(name,cmd)
+  console.log(
+    chalk.rgb(0,255,0).bgBlack(
+      figlet.textSync("欢迎使用",{
+        horizontalLayout:"full"
+      })
+    )
+  ) 
+  // tsk-cli create xxxx -f
+  // xxxx { force: true }
+  require("../lib/create")(name,cmd)
 })
 
 
