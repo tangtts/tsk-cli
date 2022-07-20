@@ -16,9 +16,10 @@ program.command("create <app-name>")
 .option("-f,--force","强制替换当前项目如果重名")
 .action((name,cmd)=>{
   console.log(
-    chalk.rgb(0,255,0).bgBlack(
-      figlet.textSync("欢迎使用",{
-        horizontalLayout:"full"
+    chalk.red.bgBlack(
+      figlet.textSync('T s k - C l i',{
+        whitespaceBreak:80,
+        width: 80,
       })
     )
   ) 
