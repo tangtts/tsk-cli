@@ -1,5 +1,5 @@
-"# tsk-cli" 
-
+"# tv3-cli" 
+> ts + vue3
 1. 创建可执行脚本
 2. 更改  package.json 中的 main
 > package.json 

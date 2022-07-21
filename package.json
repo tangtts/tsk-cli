@@ -1,11 +1,11 @@
 {
-  "name": "tsk-cli",
-  "version": "1.0.0",
-  "description": "",
+  "name": "tv3-cli",
+  "version": "1.0.1",
+  "description": "简单的脚手架",
   "main": "index.js",
   "bin": {
-    "tsk-cli": "./bin/zhu",
-    "tsk": "./bin/zhu"
+    "tv3-cli": "./bin/zhu",
+    "tv3": "./bin/zhu"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
