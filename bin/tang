@@ -7,7 +7,7 @@ var figlet = require('figlet');
 program.version(`tsk-cli@${require("../package.json").version}`)
 .usage(`<command> [options]`)
 
-//1. 创建项目 
+
 
 //2. 更改配置文件
 program.command("create <app-name>")
@@ -17,14 +17,14 @@ program.command("create <app-name>")
 .action((name,cmd)=>{
   console.log(
     chalk.red.bgBlack(
-      figlet.textSync('T s k - C l i',{
+      figlet.textSync('T s k - V u e 3 - C l i',{
         whitespaceBreak:80,
-        width: 80,
+        width: 120,
       })
     )
   ) 
   // tsk-cli create xxxx -f
-  // xxxx { force: true }
+  // 格式化信息{name 是} xxxx { force: true }
   require("../lib/create")(name,cmd)
 })
 
@@ -35,7 +35,7 @@ program.command("create <app-name>")
 // [] 命令后面加了个参数
 // < >表示配置后面加了个参数
 program.command("config [value]")
-// tsk-cli -h 可以看到
+// tsk-cli -h 可以看到 -g -s 都是简写
 .description("创建配置项")
 .option("-g, --get <path>","从选项中获取值")
 .option("-s, --set <path> <value>","从选项中获取值")
@@ -52,5 +52,5 @@ program.on("--help",function(){
   console.log()
 })
 
-
+// 解析用户传进来的命令 zhu create xxx,  create xxx 是命令本身
 program.parse(process.argv)

@@ -4,8 +4,8 @@
   "description": "简单的脚手架",
   "main": "index.js",
   "bin": {
-    "tv3-cli": "./bin/zhu",
-    "tv3": "./bin/zhu"
+    "tv3-cli": "./bin/tang",
+    "tv3": "./bin/tang"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
