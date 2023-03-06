@@ -1,7 +1,7 @@
 {
   "name": "tv3-cli",
-  "version": "2.0.1",
-  "description": "简单的脚手架",
+  "version": "2.0.2",
+  "description": "vue3+ts的脚手架",
   "main": "index.js",
   "bin": {
     "tv3-cli": "./bin/tang",
